@@ -1,0 +1,670 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import "@fontsource/twinkle-star";
+---
+
+<Layout title="PortFolio">
+	<main>
+		<header
+			class="bg-gradient-to-r from-slate-800 via-slate-600 to-slate-800 text-4xl mb-10"
+		>
+			<div class="px-8 mx-auto md:px-12 lg:px-36 max-w-7xl">
+				<!-- Enlaces del header -->
+				<nav class="text-2xl flex space-x-4 text-white justify-end">
+					<a href="/contacta" class="ov-btn-slide-left">Contacta</a>
+					<a href="#proyectos" class="ov-btn-slide-left">Proyectos</a>
+					<!-- <a href="#sobremi" class="ov-btn-slide-left">Sobre mí</a>-->
+				</nav>
+			</div>
+		</header>
+
+		<div class="px-8 mx-auto md:px-12 lg:px-36 max-w-7xl">
+			<div class="grid grid-cols-2 gap-8 items-center">
+				<!-- Primer bloque (izquierda) -->
+				<div>
+					<h1 class="text-4xl lg:text-5xl text-white">
+						Hola, soy <span class="text-sky-400 font-bold mt-4"
+							>Vincent</span
+						>
+					</h1>
+					<h2 class="ScrambleTheText">
+						<span
+							class="text-2xl text-sky-400 md:block text-onyx-400 font-bold"
+							>Software Developer</span
+						>
+					</h2>
+					<div class="text-justify text-white pt-4">
+						<p>
+							<span class="font-bold text-rose-400"
+								>Desarrollador multiplataforma</span
+							>. Apasionado por la creación de soluciones
+							innovadoras y eficientes. Desde la concepción hasta
+							la implementación.
+						</p>
+					</div>
+				</div>
+
+				<!-- Segundo bloque (derecha) -->
+				<div class="text-center">
+					<div class="mt-4">
+						<img
+							alt="Foto"
+							class="h-48 rounded-full mx-auto"
+							src="/src/assets/yo.jpg"
+						/>
+					</div>
+				</div>
+			</div>
+			<!-- Texto justificado -->
+		</div>
+		<div class="text-center mt-8 space-x-1">
+			<a
+				href="https://www.linkedin.com/in/vincent-orero-levy/"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<button
+					class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-slate-500 hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-900 transition ease-in-out duration-500"
+				>
+					<img
+						alt="Logo"
+						class="h-6 pr-2"
+						src="/src/assets/linkedin.png"
+					/>
+					<span class="font-bold">LinkedIn</span>
+				</button>
+			</a>
+			<a
+				href="https://github.com/vinol92"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<button
+					class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-slate-500 hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-900 transition ease-in-out duration-500"
+				>
+					<img
+						alt="Logo"
+						class="h-6 pr-2"
+						src="/src/assets/github.png "
+					/>
+					<span class="font-bold">Github</span>
+				</button>
+			</a>
+			<a href="/contacta" target="_blank" rel="noopener noreferrer">
+				<button
+					class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-slate-500 hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-900 transition ease-in-out duration-500"
+				>
+					<img
+						alt="Logo"
+						class="h-6 pr-2"
+						src="/src/assets/email.png "
+					/>
+					<span class="font-bold">Email</span>
+				</button>
+			</a>
+			<a
+				href="src/assets/CV Vincent Orero Levy.pdf"
+				download="CV_VincentOrero"
+			>
+				<button
+					class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-slate-500 hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-900 transition ease-in-out duration-500"
+				>
+					<img
+						alt="Logo"
+						class="h-6 pr-2"
+						src="/src/assets/pdf.png "
+					/>
+					<span class="font-bold">Descarga CV</span>
+				</button>
+			</a>
+		</div>
+	</main>
+
+	<section>
+		<div class="px-8 mx-auto md:px-12 lg:px-36 max-w-7xl pt-20">
+			<div class="mb-3">
+				<h1
+					class="text-3xl lg:text-3xl mb-10 text-sky-400 font-display"
+				>
+					Experiencia
+				</h1>
+			</div>
+
+			<div class="text-justify text-white max-w-7xl mx-auto">
+				<div
+					class="text-left bg-gradient-to-br from-slate-700 from-30% to-slate-500 to-90% p-4"
+				>
+					<h2
+						class="text-2xl text-sky-400 font-display bg-gradient-to-b from-sky-500 via-sky-400 to-white text-transparent bg-clip-text"
+					>
+						Grupo Oro <span class="text-base text-white"
+							>- Marzo / Mayo / 2024</span
+						>
+					</h2>
+
+					<div class="flex flex-col">
+						<p class="text-onyx-300 mt-2 text-white">
+							Durante mi tiempo en la empresa, lideré la
+							coordinación de un equipo para el desarrollo del
+							proyecto Diverfy. Este proyecto implicó la creación
+							de un sitio web en <span
+								class="font-bold text-rose-400">WordPress</span
+							> destinado a mostrar ofertas y facilitar la compra de
+							productos y servicios. El sitio permite a los vendedores
+							ofrecer sus servicios mientras que los usuarios pueden
+							explorar y adquirir productos. Además, el proyecto incluyó
+							la implementación de registros de usuarios y un sistema
+							de compras integrado.
+						</p>
+
+						<p class="pt-5">
+							Además, he desarrollado un proyecto denominado
+							TindNet utilizando <span
+								class="font-bold text-rose-400">Flutter</span
+							>. Se trata de una aplicación que visualmente se
+							asemeja a "Tinder", diseñada para empresas. En esta
+							aplicación, los usuarios pueden deslizar hacia la
+							derecha las empresas que les interesan y luego
+							iniciar un chat para contactarlas. Este chat les
+							permite realizar reservas o hacer consultas sobre
+							los servicios ofrecidos por la empresa.
+						</p>
+					</div>
+
+					<!-- Otros cuadros debajo -->
+				</div>
+			</div>
+		</div>
+
+		<section>
+			<div class="px-8 mx-auto md:px-12 lg:px-36 max-w-7xl">
+				<div class="mb-3">
+					<h1
+						class="pt-20 text-3xl lg:text-3xl mb-10 text-sky-400 font-display"
+					>
+						Tecnología
+					</h1>
+				</div>
+				<div class="text-justify text-white">
+					<p>
+						En mi último periodo de formación académica como <span
+							class="text-sky-400 font-bold mt-4"
+							>desarrollador de aplicaciones multiplataforma
+						</span> he adquirido los conocimientos para acometer proyectos
+						en los que se precise mis aptitudes y habilidades en la programación.
+					</p>
+					<p>
+						Así mi entusiasmo por esta materia hace que siga
+						desarrollando mis conocimientos para siempre estar al
+						día de las últimas actualizaciones en el mercado para
+						incrementar mi trabajo a nuevas oportunidades y
+						solicitudes de clientes.
+					</p>
+				</div>
+				<div
+					class="grid grid-cols-1 py-12 items-center lg:grid-cols-3 md:grid-cols-1 gap-8"
+				>
+					<div
+						class="brillo text-center bg-gradient-to-br from-slate-700 from-30% to-slate-500 to-90% rounded-lg p-4"
+					>
+						<h2
+							class="text-2xl text-sky-400 font-display bg-gradient-to-b from-sky-500 via-sky-400 to-white inline-block text-transparent bg-clip-text"
+						>
+							Frontend
+						</h2>
+						<div class="mt-4 grid grid-cols-2 gap-4">
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 1"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-700"
+									src="/src/assets/htm.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									HTML
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 2"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/css.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									CSS
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 2"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/tailwind.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									TailWind
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 2"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/figma.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									Figma
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 2"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/astro.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									Astro
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 2"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/flutter-icon.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									Flutter
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="text-center bg-gradient-to-br from-slate-700 from-30 to-slate-500 to-90% rounded-lg p-4"
+					>
+						<h2
+							class="text-2xl text-sky-400 font-display bg-gradient-to-b from-sky-500 via-sky-400 to-white inline-block text-transparent bg-clip-text"
+						>
+							Backend
+						</h2>
+						<div class="mt-4 grid grid-cols-2 gap-4">
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 1"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/php.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									PHP
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 2"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/mysql.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									MySQL
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 2"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/mongodb.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									MongoDB
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 2"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/firebase.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									Firebase
+								</p>
+							</div>
+
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 2"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/phyton.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									Python
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 2"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/java.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									Java
+								</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="text-center bg-gradient-to-br from-slate-700 from-30% via-30% to-slate-500 to-90% rounded-lg p-4"
+					>
+						<h2
+							class="text-2xl text-sky-400 font-display bg-gradient-to-b from-sky-500 via-sky-400 to-white inline-block text-transparent bg-clip-text"
+						>
+							Herramientas
+						</h2>
+						<div class="mt-4 grid grid-cols-2 gap-4">
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 1"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="src/assets/androidstudio.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									Android Studio
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 2"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/vscode.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									VSCode
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 2"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/github.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									GitHub
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 2"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/wordpress.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									WordPress
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<img
+									alt="Logo Lenguaje 2"
+									class="h-10 transform motion-safe:hover:scale-125 transition ease-in-out duration-500"
+									src="/src/assets/git.png"
+								/>
+								<p
+									class="text-onyx-300 mt-2 text-white font-semibold"
+								>
+									Git
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="proyectos">
+			<div class="px-8 mx-auto md:px-12 lg:px-36 max-w-7xl pt-10">
+				<div class="mb-3">
+					<h1
+						class="text-3xl lg:text-3xl mb-10 text-sky-400 font-display"
+					>
+						Proyectos
+					</h1>
+				</div>
+				<div class="text-justify text-white">
+					<p>
+						Aquí podrás encontrar algunos de <span
+							class="text-sky-400 font-bold mt-4"
+							>mis proyectos</span
+						>. Cada uno es el resultado de mi dedicación y pasión
+						por la programación y estoy encantado de compartirlos.
+						Descubre cómo transformo ideas en realidades digitales.
+						¡Explora, inspira y crea con mis proyectos de software!
+					</p>
+				</div>
+				<div
+					class="grid grid-cols-1 py-12 items-center lg:grid-cols-2 md:grid-cols-1 gap-8"
+				>
+					<!-- Primer bloque -->
+					<div
+						class="bg-gradient-to-tl from-slate-700 from-30% to-slate-400 to-90% rounded-lg p-4"
+					>
+						<!-- Foto -->
+						<div class="mt-4 overflow-hidden">
+							<img
+								alt="Foto"
+								class="h-full w-full object-contain rounded-lg"
+								src="/src/assets/foodplanner.png"
+							/>
+						</div>
+						<!-- Texto en negrita -->
+						<p class="font-bold mt-4 text-white">
+							Food Planner App
+						</p>
+						<!-- Bloque para introducir texto -->
+						<div class="mt-4 text-white">
+							<p>
+								Esta aplicación está pensada para que los
+								usuarios puedan controlar el stock de alimentos
+								de su nevera, sugerir recetas saludables además
+								de poner en contacto a usuarios con
+								nutricionistas profesionales.
+							</p>
+						</div>
+						<!-- Tres pequeños recuadros para escribir texto -->
+						<div class="mt-2 grid grid-cols-3 gap-3">
+							<div
+								class="text-center bg-slate-500 rounded-3xl p-1 text-white"
+							>
+								Adorid Studio
+							</div>
+							<div
+								class="text-center bg-slate-500 rounded-3xl p-1 text-white"
+							>
+								Java
+							</div>
+							<div
+								class="text-center bg-slate-500 rounded-3xl p-1 text-white"
+							>
+								Firebase
+							</div>
+						</div>
+					</div>
+					<!-- Segundo bloque -->
+					<div
+						class="bg-gradient-to-tl from-slate-700 from-30% to-slate-400 to-90% rounded-lg p-4"
+					>
+						<!-- Foto -->
+						<div class="mt-4 overflow-hidden rounded-lg">
+							<img
+								alt="Foto"
+								class="h-full w-full object-contain"
+								src="src/assets/ejemplotindnet.png"
+							/>
+						</div>
+						<!-- Texto en negrita -->
+						<p class="font-bold mt-4 text-white">TindNet</p>
+						<!-- Bloque para introducir texto -->
+						<div class="mt-4 text-white">
+							<p>
+								Se trata de una aplicación que visualmente se
+								asemeja a "Tinder", diseñada para empresas. En
+								esta aplicación, los usuarios pueden deslizar
+								hacia la derecha las empresas que les interesan
+								y luego iniciar un chat para contactarlas.
+							</p>
+						</div>
+						<!-- Tres pequeños recuadros para escribir texto -->
+						<div class="mt-2 grid grid-cols-3 gap-3 text-white">
+							<div
+								class="text-center bg-slate-500 rounded-3xl p-1"
+							>
+								Flutter
+							</div>
+							<div
+								class="text-center bg-slate-500 rounded-3xl p-1"
+							>
+								Dart
+							</div>
+							<div
+								class="text-center bg-slate-500 rounded-3xl p-1"
+							>
+								Firebase
+							</div>
+						</div>
+					</div>
+					<!-- Tercer bloque que ocupa el ancho de los dos bloques anteriores -->
+					<div
+						class="bg-gradient-to-tl from-slate-700 from-30% to-slate-400 to-90% rounded-lg p-4"
+					>
+						<!-- Foto -->
+						<div class="mt-4 overflow-hidden rounded-lg">
+							<img
+								alt="Foto"
+								class="h-full w-full object-contain"
+								src="src/assets/diverfy.JPG"
+							/>
+						</div>
+						<!-- Texto en negrita -->
+						<p class="font-bold mt-4 text-white">Diverfy</p>
+						<!-- Bloque para introducir texto -->
+						<div class="mt-4 text-white">
+							<p>
+								Este proyecto web en la que encontraras las
+								mejores ofrtas de empresas tanto de productos
+								como de servicios. Registrate como marca para
+								ofreceer tus productos, como influencer para
+								generar codigos de descuento para tus
+								seguidoreso o como usuario para beneficiarte de
+								las ofertas.
+							</p>
+						</div>
+						<!-- Tres pequeños recuadros para escribir texto -->
+						<div class="mt-2 grid grid-cols-3 gap-3 text-white">
+							<div
+								class="text-center bg-slate-500 rounded-3xl p-1"
+							>
+								WordPress
+							</div>
+							<div
+								class="text-center bg-slate-500 rounded-3xl p-1"
+							>
+								CSS
+							</div>
+							<div
+								class="text-center bg-slate-500 rounded-3xl p-1"
+							>
+								PHP
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 
+		<section id="sobremi">
+			<div class="px-8 mx-auto md:px-12 lg:px-36 max-w-7xl pt-20">
+				<div class="mb-3">
+					<h1
+						class="text-3xl lg:text-3xl mb-10 text-sky-400 font-display"
+					>
+						Sobre mi
+					</h1>
+				</div>
+				<div class="text-justify text-white">
+					<p>
+						Soy responsable, creativo, con capacidad de escucha y
+						comprensión de las tareas y objetivos que se esperen de
+						mi trabajo. Todo esto para estar alineado con la
+						estrategia que tenga su empresa para poder contribuir al
+						desarrollo de su negocio en la oferta a sus clientes
+						actuales y para la captación de nuevos.
+					</p>
+				</div>
+			</div>
+		</section>
+	</section>
+-->
+		<!-- 
+ Esta aplicacion esta pensada para que los usuarios puedan controlar
+el stock de alimentos de su nevera, sugerir recetas saludables además poner en contacto
+a usuarios con nutricionistas profesionales.
+<div
+
+
+
+Este proyecto web en la que encontraras
+										las mejores ofrtas de empresas tanto de
+										productos como de servicios. Registrate
+										como marca para ofreceer tus productos,
+										como influencer para generar codigos de
+										descuento para tus seguidoreso o como
+										usuario para beneficiarte de las
+										ofertas.
+									class="mt-2 grid grid-cols-3 gap-3 text-white"
+								>
+									<div
+										class="text-center bg-slate-500 rounded-3xl p-1"
+									>
+										Recuadro 1
+									</div>
+									<div
+										class="text-center bg-slate-500 rounded-3xl p-1"
+									>
+										Recuadro 2
+									</div>
+									<div
+										class="text-center bg-slate-500 rounded-3xl p-1"
+									>
+										Recuadro 3
+									</div>
+
+-->
+	</section>
+</Layout>

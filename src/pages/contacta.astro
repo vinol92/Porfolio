@@ -1,0 +1,131 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Contacto">
+    <main>
+        <header
+            class="bg-gradient-to-r from-slate-800 via-slate-600 to-slate-800 text-4xl mb-10"
+        >
+            <div class="px-8 mx-auto md:px-12 lg:px-36 max-w-7xl">
+                <!-- Enlaces del header -->
+                <nav class="text-2xl flex space-x-4 text-white justify-end">
+                    <a href="/#" class="ov-btn-slide-left">Inicio</a>
+                    <a href="#" class="ov-btn-slide-left">Proyectos</a>
+                    <!-- <a href="#" class="ov-btn-slide-left">Sobre mí</a>-->
+                </nav>
+            </div>
+        </header>
+
+        <style>
+            /* Estilo para los bloques de texto */
+            .input-line {
+                border: none;
+                border-bottom: 2px solid white; /* Cambiar el color de la línea a blanco */
+                background-color: transparent; /* Hacer el fondo transparente */
+                color: white; /* Cambiar el color del texto a blanco */
+                width: 100%; /* Hacer que el ancho sea del 100% */
+                padding: 0.25rem 0; /* Añadir un poco de relleno arriba y abajo */
+                margin-top: 0.5rem; /* Añadir un poco de margen arriba */
+                margin-bottom: 1rem; /* Añadir margen inferior */
+            }
+        </style>
+
+        <style>
+            /* Estilo para los labels */
+            .form-label {
+                font-size: 1.25rem; /* Ajusta el tamaño de la fuente según sea necesario */
+            }
+        </style>
+
+        <div class="flex justify-center items-start min-h-screen">
+            <form
+                class="max-w-3xl w-full grid grid-cols-1 gap-6"
+                action="/enviar-email"
+                method="post"
+            >
+                <!-- Título -->
+                <h2
+                    class="text-4xl font-semibold text-left text-sky-400 mt-10 mb-36 pt-32"
+                >
+                    Ponte en contacto conmigo
+                </h2>
+
+                <!-- Texto encima del formulario -->
+                <p class="text-left text-white text-2xl pb-10">
+                    Por favor, completa el formulario a continuación y te
+                    responderé lo antes posible.
+                </p>
+
+                <!-- Contenido del formulario -->
+                <!-- Aquí van los campos del formulario -->
+                <div>
+                    <label
+                        for="nombre"
+                        class="text-white block w-full form-label"
+                        >Nombre y Apellidos</label
+                    >
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        class="input-line"
+                        required
+                    />
+                </div>
+
+                <div>
+                    <label
+                        for="email"
+                        class="text-white block w-full form-label"
+                        >Correo electrónico</label
+                    >
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="input-line"
+                        required
+                    />
+                </div>
+
+                <div>
+                    <label
+                        for="asunto"
+                        class="text-white block w-full form-label">Asunto</label
+                    >
+                    <input
+                        type="text"
+                        id="asunto"
+                        name="asunto"
+                        class="input-line"
+                        required
+                    />
+                </div>
+
+                <div>
+                    <label
+                        for="mensaje"
+                        class="text-white block w-full form-label"
+                        >¿Qué necesitas?</label
+                    >
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="4"
+                        class="input-line"
+                        required></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button
+                        type="submit"
+                        class="inline-flex items-center justify-center text-lg px-8 py-2 border border-transparent font-bold rounded-md text-white bg-slate-500 hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-900 transition ease-in-out duration-500"
+                        >Enviar</button
+                    >
+                </div>
+            </form>
+        </div>
+    </main>
+</Layout>

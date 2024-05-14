@@ -1,0 +1,114 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			rgb(255, 255, 255) 60%
+		);
+	}
+	html {
+		font-family: "Mukta", sans-serif;
+		background: linear-gradient(to right, #283342, #4b596e, #283342);
+		background-size: 100% 100%;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+	span {
+		font-family: "Mukta-Bold", sans-serif;
+	}
+	h1 {
+		font-family: "Mukta-Bold", sans-serif;
+		font-weight: 700;
+	}
+	h2 {
+		font-family: "Mukta-Bold", sans-serif;
+		font-weight: 700;
+		letter-spacing: 1px;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+
+	.ov-btn-slide-left {
+		color: #ffffff; /* color de fuente */
+
+		padding: 5px 5px;
+		border-radius: 5px; /* redondear bordes */
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		display: inline-block;
+	}
+	.ov-btn-slide-left:hover {
+		color: #fff; /* color de fuente hover */
+	}
+	.ov-btn-slide-left::after {
+		content: "";
+		background: #0ea5e9; /* color de fondo hover */
+		position: absolute;
+		z-index: -1;
+		padding: 0px 5px;
+		display: block;
+		top: 0;
+		bottom: 0;
+		left: -100%;
+		right: 100%;
+		-webkit-transition: all 0.35s;
+		transition: all 0.35s;
+	}
+	.ov-btn-slide-left:hover::after {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		-webkit-transition: all 0.35s;
+		transition: all 0.35s;
+
+		
+	}
+</style>
+
+<style is:global>
+	@font-face {
+		font-family: "Mukta";
+		src: url("/fonts/Mukta-Light.ttf") format("truetype");
+		font-style: normal;
+		font-display: swap;
+		font-weight: 100;
+		display: flex;
+	}
+</style>
